@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bank App</h1>
+        <div class="balance">
+            <p>Balance: <span id="balance">0</span> Rs</p>
+        </div>
+        <div class="actions">
+            <input type="number" id="amount" placeholder="Enter amount">
+            <button onclick="deposit()">Deposit</button>
+            <button onclick="withdraw()">Withdraw</button>
+        </div>
+        <div class="timer">
+            <p>Time until next addition: <span id="timer">00:00:00</span></p>
+        </div>
+        <div class="history">
+            <h2>Transaction History</h2>
+            <ul id="transaction-history"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
